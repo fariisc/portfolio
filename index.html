@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Faris - Business Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Equivalent to Tailwind's gray-900 */
+            color: #e2e8f0; /* Equivalent to Tailwind's slate-200 */
+        }
+        .accent-color {
+            color: #2dd4bf; /* teal-400 */
+        }
+        .bg-accent-color {
+            background-color: #2dd4bf; /* teal-400 */
+        }
+        .border-accent-color {
+            border-color: #2dd4bf; /* teal-400 */
+        }
+        .modal {
+            transition: opacity 0.25s ease;
+        }
+        .modal-content {
+            transition: transform 0.25s ease;
+        }
+        /* Custom scrollbar for better aesthetics in dark theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2d3748; /* gray-800 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568; /* gray-600 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096; /* gray-500 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-gray-900/80 backdrop-blur-sm fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-white">Muhammed Faris</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-slate-300 hover:text-teal-400 transition">Home</a>
+                <a href="#projects" class="text-slate-300 hover:text-teal-400 transition">Projects</a>
+                <a href="#skills" class="text-slate-300 hover:text-teal-400 transition">Skills</a>
+                <a href="#contact" class="text-slate-300 hover:text-teal-400 transition">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-slate-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-slate-300 hover:text-teal-400 transition">Home</a>
+            <a href="#projects" class="block py-2 text-slate-300 hover:text-teal-400 transition">Projects</a>
+            <a href="#skills" class="block py-2 text-slate-300 hover:text-teal-400 transition">Skills</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-teal-400 transition">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center pt-24 pb-12">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <img src="images/profile.jpg" alt="Muhammed Faris" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-teal-400 shadow-lg">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Muhammed Faris</h1>
+                    <h2 class="text-2xl md:text-3xl mt-2 mb-6">
+                        <span class="text-slate-300">Business Analyst & </span><span class="accent-color">Data Storyteller</span>
+                    </h2>
+                    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-8">
+                        Transforming complex data into clear, actionable insights that drive strategic business decisions.
+                    </p>
+                    <div class="flex justify-center items-center space-x-4 mb-8">
+                        <a href="#projects" class="bg-accent-color text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-teal-500 transition duration-300 shadow-md">View My Projects</a>
+                        <a href="/MUHAMMED-FARIS-CV.pdf" download="MUHAMMED-FARIS-CV.pdf"class="border-2 border-accent-color text-teal-400 font-bold py-3 px-6 rounded-lg hover:bg-teal-400 hover:text-gray-900 transition duration-300 shadow-md">Download CV</a>
+                        
+                    </div>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://www.linkedin.com" target="_blank" class="text-slate-400 hover:text-teal-400 transition">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <a href="mailto:muhammedfarisc03@gmail.com" class="text-slate-400 hover:text-teal-400 transition">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                        </a>
+                        <a href="tel:+919645490030" class="text-slate-400 hover:text-teal-400 transition">
+                           <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Featured Projects</h2>
+                    <p class="text-lg text-slate-400 mt-2">From Insights to Impact</p>
+                    <div class="w-24 h-1 bg-teal-400 mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project Card: E-Commerce -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="images/dash.png" alt="E-Commerce Orders Dashboard" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">E-Commerce Orders Dashboard</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Power BI</span>
+                                <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">DAX</span>
+                                <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Excel</span>
+                            </div>
+                            <p class="text-slate-400 mb-4 text-sm">An interactive dashboard to analyze multi-year e-commerce sales, identifying key trends, customer segments, and churn drivers.</p>
+                            <button class="view-case-study w-full text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-400 hover:text-gray-900 transition" data-project="ecommerce">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Myntra -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="images/myntra_dash.png" alt="Myntra Sales Dashboard" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Myntra Sales Performance</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Power BI</span>
+                               <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">SQL</span>
+                            </div>
+                            <p class="text-slate-400 mb-4 text-sm">Transformed raw sales data into actionable insights, tracking KPIs like total sales and regional performance.</p>
+                            <button class="view-case-study w-full text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-400 hover:text-gray-900 transition" data-project="myntra">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Marketing Campaign -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="images/project_pg1.png" alt="Marketing Campaign Dashboard" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Marketing Campaign Performance</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Power BI</span>
+                            </div>
+                            <p class="text-slate-400 mb-4 text-sm">A unified Power BI dashboard tracking KPIs from 5 marketing channels to measure effectiveness and optimize spend.</p>
+                            <button class="view-case-study w-full text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-400 hover:text-gray-900 transition" data-project="marketing">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: TripAdvisor -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="images/tableau.png" alt="TripAdvisor Review Dashboard" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">TripAdvisor Review Analysis</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Tableau</span>
+                            </div>
+                            <p class="text-slate-400 mb-4 text-sm">Developed an interactive dashboard to analyze thousands of reviews, enabling deep dives into customer feedback and sentiment.</p>
+                            <button class="view-case-study w-full text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-400 hover:text-gray-900 transition" data-project="tripadvisor">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Customer Analytics -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="images/excel.jpg" alt="Customer Analytics Dashboard" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Customer Analytics Dashboard</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Excel</span>
+                            </div>
+                            <p class="text-slate-400 mb-4 text-sm">An advanced Excel tool to analyze and summarize customer shopping patterns and behavioral metrics for targeted insights.</p>
+                            <button class="view-case-study w-full text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-400 hover:text-gray-900 transition" data-project="customer_analytics">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Healthcare -->
+                     <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="images/sql1.png" alt="Healthcare Database Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Healthcare Database Analysis</h3>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">MySQL</span>
+                            </div>
+                            <p class="text-slate-400 mb-4 text-sm">Developed complex SQL queries to generate critical operational and analytical reports on cost, inventory, and financials.</p>
+                            <button class="view-case-study w-full text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-400 hover:text-gray-900 transition" data-project="healthcare">View Case Study</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">My Analytical Toolkit</h2>
+                    <div class="w-24 h-1 bg-teal-400 mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <!-- Data Viz & BI -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="text-teal-400 mb-4">
+                           <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Data Visualization & BI</h3>
+                        <p class="text-slate-400">Tableau, Power BI, Advanced Excel, Data Storytelling</p>
+                    </div>
+                    <!-- Database Management -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="text-teal-400 mb-4">
+                            <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4M4 7l8 4.5 8-4.5M12 11.5V15" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Database Management</h3>
+                        <p class="text-slate-400">SQL (Joins, Aggregations, Subqueries, DML)</p>
+                    </div>
+                    <!-- Programming -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="text-teal-400 mb-4">
+                           <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l-4 4-4-4M6 16l-4-4 4-4" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Programming</h3>
+                        <p class="text-slate-400">Python (Fundamentals for data tasks)</p>
+                    </div>
+                    <!-- Business Analysis -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="text-teal-400 mb-4">
+                           <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Business Analysis</h3>
+                        <p class="text-slate-400">Requirement Gathering, Stakeholder Management, Data Cleaning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Let's Connect</h2>
+                    <p class="text-lg text-slate-400 mt-2">Open to new opportunities and collaborations.</p>
+                    <div class="w-24 h-1 bg-teal-400 mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <form action="#" method="POST" class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-slate-300 mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-teal-400">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-slate-300 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-teal-400">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                             <label for="message" class="block text-slate-300 mb-2">Message</label>
+                             <textarea id="message" name="message" rows="4" class="w-full bg-gray-700 text-white border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-teal-400"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-accent-color text-gray-900 font-bold py-3 px-8 rounded-lg hover:bg-teal-500 transition duration-300 shadow-md">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-400">
+            <p>&copy; <span id="current-year"></span> Muhammed Faris. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4 opacity-0 pointer-events-none">
+        <div id="modal-content-container" class="modal-content bg-gray-800 w-full max-w-3xl max-h-[90vh] rounded-lg shadow-2xl overflow-hidden transform scale-95">
+            <div class="flex justify-between items-center p-4 border-b border-gray-700">
+                <h3 id="modal-title" class="text-2xl font-bold text-white">Project Details</h3>
+                <button id="close-modal" class="text-gray-400 hover:text-white">&times;</button>
+            </div>
+            <div id="modal-body" class="p-6 overflow-y-auto">
+                <!-- Content will be injected here by JS -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Modal Logic
+            const modal = document.getElementById('project-modal');
+            const modalContentContainer = document.getElementById('modal-content-container');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+            const closeModalButton = document.getElementById('close-modal');
+            const viewCaseStudyButtons = document.querySelectorAll('.view-case-study');
+
+            const projectDetails = {
+                ecommerce: {
+                    title: "E-Commerce Orders Dashboard",
+                    content: `
+                        <div class="space-y-4">
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Problem:</h4><p class="text-slate-300">The business needed a centralized view of its multi-year e-commerce performance to understand sales trends, customer behavior, and product performance without manual data compilation from various sources.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Solution:</h4><p class="text-slate-300">Designed and developed a comprehensive, interactive dashboard in Power BI. I built a robust data model and used DAX to create complex measures like Year-over-Year growth, Average Order Value (AOV), and Previous Year (PY) sales comparisons. The dashboard featured dynamic KPIs, drill-down filters for date and category, and visualizations for sales by product, payment method, age group, and gender.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Impact:</h4><p class="text-slate-300">The dashboard provided stakeholders with self-service analytics, leading to quicker, data-driven decisions. It delivered actionable insights that helped improve sales forecasting, optimize payment gateway strategies, and refine customer segmentation for targeted marketing campaigns. The churn analysis also highlighted key areas for improving customer retention.</p></div>
+                            <div class="mt-4 pt-4 border-t border-gray-700"><h4 class="text-lg font-semibold text-teal-400 mb-2">Tools Used:</h4><div class="flex flex-wrap gap-2"><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Power BI</span><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">DAX</span><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Data Modeling</span><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Excel</span></div></div>
+                        </div>`
+                },
+                myntra: {
+                    title: "Myntra Sales Performance Dashboard",
+                    content: `
+                        <div class="space-y-4">
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Problem:</h4><p class="text-slate-300">The Myntra sales team needed a way to consolidate and visualize messy, raw sales data from multiple channels to quickly assess performance and identify growth opportunities.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Solution:</h4><p class="text-slate-300">I executed data cleaning and transformation using SQL queries to prepare the data for analysis. Then, I designed and built a comprehensive Power BI dashboard with interactive filters for deep-dive analysis across brands, categories, sizes, and colors. The dashboard visualized key KPIs at a glance, including Total Orders, Total Sales, and regional sales distribution.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Impact:</h4><p class="text-slate-300">The final dashboard empowered stakeholders to self-service their analysis. It enabled them to identify optimal sales periods through trend analysis and make data-driven decisions to optimize inventory management and marketing efforts, significantly improving reporting efficiency.</p></div>
+                            <div class="mt-4 pt-4 border-t border-gray-700"><h4 class="text-lg font-semibold text-teal-400 mb-2">Tools Used:</h4><div class="flex flex-wrap gap-2"><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Power BI</span><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">SQL</span></div></div>
+                        </div>`
+                },
+                marketing: {
+                    title: "Marketing Campaign Performance",
+                    content: `
+                        <div class="space-y-4">
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Problem:</h4><p class="text-slate-300">Marketing data was siloed across five distinct channels (Facebook, Google Ads, YouTube, Instagram, Email), making it difficult to get a holistic view of campaign performance and ROI.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Solution:</h4><p class="text-slate-300">I designed and deployed a comprehensive Power BI dashboard that unified data from all five channels into a single analytical view. The dashboard tracked and visualized critical KPIs, including conversion rates and monthly Return on Investment (ROI) trends, to measure program effectiveness.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Impact:</h4><p class="text-slate-300">The dashboard identified high-performing campaigns and segments, delivering actionable, data-driven insights that directly supported the optimization of marketing spend. It improved overall campaign efficiency by providing stakeholders with the intelligence to reallocate budget and maximize promotional results.</p></div>
+                            <div class="mt-4 pt-4 border-t border-gray-700"><h4 class="text-lg font-semibold text-teal-400 mb-2">Tools Used:</h4><div class="flex flex-wrap gap-2"><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Power BI</span></div></div>
+                        </div>`
+                },
+                tripadvisor: {
+                    title: "TripAdvisor Review Data Analysis",
+                    content: `
+                         <div class="space-y-4">
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Problem:</h4><p class="text-slate-300">A client needed to understand key trends and sentiment hidden within thousands of customer reviews on TripAdvisor to identify areas for service improvement.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Solution:</h4><p class="text-slate-300">I developed an interactive Tableau dashboard to analyze the review dataset. I engineered dynamic controls using parameters and calculated fields, allowing users to flexibly segment data by date range, location, or rating. The dashboard visualized core metrics like average ratings, review volume, and the distribution of customer sentiment (positive, negative, neutral).</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Impact:</h4><p class="text-slate-300">The dashboard provided actionable recommendations based on visualized insights. It guided the client on specific areas to improve customer experience and enhance operational efficiency, turning qualitative feedback into quantitative, strategic actions.</p></div>
+                            <div class="mt-4 pt-4 border-t border-gray-700"><h4 class="text-lg font-semibold text-teal-400 mb-2">Tools Used:</h4><div class="flex flex-wrap gap-2"><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Tableau</span></div></div>
+                        </div>`
+                },
+                customer_analytics: {
+                    title: "Customer Analytics Dashboard",
+                    content: `
+                         <div class="space-y-4">
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Problem:</h4><p class="text-slate-300">The marketing team required deeper insights into purchasing behavior but lacked a tool to easily analyze and summarize customer shopping patterns and behavioral metrics.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Solution:</h4><p class="text-slate-300">I developed and deployed a comprehensive data visualization tool in Excel. It applied advanced functionality, including Pivot Tables, complex formulas (e.g., VLOOKUP, INDEX-MATCH), and dynamic charts to summarize and track key trends in customer data.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Impact:</h4><p class="text-slate-300">The tool identified specific customer segments and their product/service preferences, enabling targeted insights for the marketing team. It supported strategic decision-making by providing clear, digestible visualizations of customer engagement, ultimately informing and optimizing marketing and product strategies.</p></div>
+                            <div class="mt-4 pt-4 border-t border-gray-700"><h4 class="text-lg font-semibold text-teal-400 mb-2">Tools Used:</h4><div class="flex flex-wrap gap-2"><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Excel</span></div></div>
+                        </div>`
+                },
+                healthcare: {
+                    title: "Healthcare Database Analysis & Reporting",
+                    content: `
+                         <div class="space-y-4">
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Problem:</h4><p class="text-slate-300">The organization required a series of complex operational and analytical reports from its healthcare database, which could not be generated through standard reporting tools.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Solution:</h4><p class="text-slate-300">I developed complex MySQL queries using JOINS, subqueries, and conditional logic (CASE statements) to generate the required reports. This involved calculating effective prescription costs with pharmacy-specific discounts, classifying patients into age groups, and transforming raw tax codes into descriptive labels for simplified reporting.</p></div>
+                            <div><h4 class="text-lg font-semibold text-teal-400 mb-1">Impact:</h4><p class="text-slate-300">The custom scripts delivered critical analytical reports on inventory, cost management, and key financial metrics. This automated previously manual reporting tasks and provided precise data that supported strategic decisions in cost control and pharmacy management.</p></div>
+                            <div class="mt-4 pt-4 border-t border-gray-700"><h4 class="text-lg font-semibold text-teal-400 mb-2">Tools Used:</h4><div class="flex flex-wrap gap-2"><span class="bg-teal-900 text-teal-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">MySQL</span></div></div>
+                        </div>`
+                }
+            };
+
+            function openModal(projectKey) {
+                const project = projectDetails[projectKey];
+                if (project) {
+                    modalTitle.textContent = project.title;
+                    modalBody.innerHTML = project.content;
+                    modal.classList.remove('opacity-0', 'pointer-events-none');
+                    modalContentContainer.classList.remove('scale-95');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function closeModal() {
+                modal.classList.add('opacity-0');
+                modalContentContainer.classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('pointer-events-none');
+                    document.body.style.overflow = 'auto';
+                }, 250); // Match transition duration
+            }
+
+            viewCaseStudyButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const projectKey = button.dataset.project;
+                    openModal(projectKey);
+                });
+            });
+
+            closeModalButton.addEventListener('click', closeModal);
+            
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeModal();
+                }
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                     // Close mobile menu on link click
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
